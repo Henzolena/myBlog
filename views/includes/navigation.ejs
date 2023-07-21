@@ -1,0 +1,41 @@
+<header>
+    <div class="header-container">
+        <div class="menu-toggle">
+            <span>&#9776;</span> <!-- This is the Unicode for a hamburger menu icon -->
+        </div>
+        <div class="logo">
+            <a href="/about"><img src="logo/Bella.png" alt="Henzo's Logo" class="logo-img"></a>
+        </div>
+        
+
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link <%= path === '/' ? 'active' : '' %>">Home</a></li>
+                <li><a href="/about" class="nav-link <%= path === '/about' ? 'active' : '' %>">About</a></li>
+                <li><a href="/contact" class="nav-link <%= path === '/contact' ? 'active' : '' %>">Contact</a></li>
+                <li><a href="/portfolio" class="nav-link <%= path === '/portfolio' ? 'active' : '' %>">Portfolio</a>
+                </li>
+                <li><a href="/resume" class="nav-link <%= path === '/resume' ? 'active' : '' %>">Resume</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/henok-robale"><img src="Social/linkedin_icon.png" alt="Linkedin"
+                    class="social-img"></a>
+            <a href="https://github.com/Henzolena"><img src="Social/github_icon.png" alt="Github"
+                    class="social-img"></a>
+            <a href="https://instagram.com/henzolena?igshid=MmIzYWVlNDQ5Yg=="><img src="Social/instagram_icon.png"
+                    alt="Instagram" class="social-img"></a>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.nav-links').toggle();
+            });
+        });
+    </script>
+</header>
