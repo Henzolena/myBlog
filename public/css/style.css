@@ -4,7 +4,7 @@ body {
     padding-right: 0%;
     background-repeat: no-repeat;
     /* background-position: center center; */
-    background-attachment:initial; /* This will prevent the image from scrolling with the page */
+    background-attachment:fixed; /* This will prevent the image from scrolling with the page */
     background-size:cover; /* This will scale the image to the largest size such that both its width and its height can fit inside the content area */
     }
 h1{
